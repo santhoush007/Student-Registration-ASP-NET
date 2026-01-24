@@ -18,24 +18,3 @@ A web-based application built with **ASP.NET (C#)** and **ADO.NET** to manage st
 * **Database:** Microsoft SQL Server (LocalDB / Express)
 * **Data Access:** ADO.NET (SqlClient)
 * **IDE:** Visual Studio
-
----
-
-## ⚙️ How to Run Locally
-
-### 1. Database Setup
-Execute the following SQL script in your **SQL Server Management Studio (SSMS)** to create the database and table:
-
-```sql
-CREATE DATABASE CollegeDB;
-GO
-USE CollegeDB;
-GO
-
-CREATE TABLE StudentReg (
-    StudentID INT IDENTITY(1,1) PRIMARY KEY,
-    Name NVARCHAR(100),
-    CourseName NVARCHAR(100),
-    CellNo NVARCHAR(15),
-    EmailId NVARCHAR(100)
-);
